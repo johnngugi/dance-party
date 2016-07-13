@@ -1,0 +1,17 @@
+.redcircle {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  animation-name: dissapear;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+@keyframes dissapear {
+  0% {opacity: 1; animation-timing-function: ease;}
+  50% {opacity: 0; animation-timing-function: ease;}
+  100% {opacity: 1; animation-timing-function: ease;}
+}
