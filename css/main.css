@@ -3,15 +3,93 @@
   height: 200px;
   width: 200px;
   background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
   animation-name: dissapear;
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   opacity: 0;
 }
+.greencircle {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-color: green;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  animation-name: dissapear;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  opacity: 0;
+}
+.yellowcircle {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-color: yellow;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  animation-name: dissapear;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  opacity: 0;
+}
+.bluecircle {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  animation-name: dissapear;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  opacity: 0;
+}
+.orangecircle {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-color: orange;
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  animation-name: dissapear;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  opacity: 0;
+}
+.purplecircle {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-color: purple;
+  position: absolute;
+  top: 5%;
+  left: 80%;
+  animation-name: dissapear;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  opacity: 0;
+}
 
 @keyframes dissapear {
-  0% {opacity: 1; animation-timing-function: ease;}
-  50% {opacity: 0; animation-timing-function: ease;}
-  100% {opacity: 1; animation-timing-function: ease;}
+  0% {opacity: 0; animation-timing-function: ease;}
+  50% {opacity: 1; animation-timing-function: ease;}
+  100% {opacity: 0; animation-timing-function: ease;}
 }
