@@ -1,10 +1,26 @@
+/* Background Image */
+
+#bg {
+	min-height: 100%;
+  min-width: 100%;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+	z-index: -1;
+	opacity: 0.5;
+}
+
+/* Circles */
+
 .redcircle {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   background-color: red;
   position: absolute;
-  top: 0;
+  top: 20%;
   left: 0;
   animation-name: dissapear;
   animation-duration: 2s;
@@ -14,57 +30,83 @@
 }
 .greencircle {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   background-color: green;
   position: absolute;
-  top: 10%;
-  left: 30%;
+  top: 30%;
+  left: 25%;
   animation-name: shake;
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-delay: 1s;
-  opacity: 1;
 }
 .yellowcircle {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   background-color: yellow;
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 40%;
-  animation-name: dissapear;
+  animation-name: updown;
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-delay: 0s;
-  opacity: 0;
 }
 .bluecircle {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   background-color: blue;
   position: absolute;
-  top: 60%;
+  top: 80%;
   left: 60%;
   animation-name: dissapear;
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-delay: 1s;
+  animation-delay: 0s;
   opacity: 0;
 }
 .orangecircle {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   background-color: orange;
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 20%;
+  animation-name: shake;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.purplecircle {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+  position: absolute;
+  top: 15%;
+  left: 80%;
+  animation-name: updown;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+.violetcircle {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: #006666;
+  position: absolute;
+  top: 50%;
+  left: 10%;
   animation-name: dissapear;
   animation-duration: 2s;
   animation-timing-function: linear;
@@ -72,21 +114,36 @@
   animation-delay: 0s;
   opacity: 0;
 }
-.purplecircle {
+.skybluecircle {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
-  background-color: purple;
+  height: 100px;
+  width: 100px;
+  background-color: #2196c4;
   position: absolute;
-  top: 5%;
-  left: 80%;
-  animation-name: dissapear;
+  top: 15%;
+  left: 60%;
+  animation-name: shake;
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-delay: 1s;
-  opacity: 0;
 }
+.pinkcircle {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: #ff3355;
+  position: absolute;
+  top: 75%;
+  left: 80%;
+  animation-name: updown;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+
+/* Animation */
 
 @keyframes dissapear {
   0% {opacity: 0; animation-timing-function: ease;}
@@ -94,7 +151,44 @@
   100% {opacity: 0; animation-timing-function: ease;}
 }
 @keyframes shake {
-  0% {left: 10px; animation-timing-function: ease-in-out;}
-  50% {right: 20px; animation-timing-function: ease-in-out;}
-  100% {left: 10px; animation-timing-function: ease-in-out;}
+  10%, 90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-8px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(8px, 0, 0);
+  }
+}
+@keyframes updown {
+  10%, 90% {
+    transform: translate3d(0, -2px, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(0, 4px, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(0, -8px, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(0, 8px, 0);
+  }
+}
+
+/* Styles */
+.dance {
+  background: #1a1a1a;
+  color: #ff9900;
+  text-align: center;
+  width: 100% !important;
 }
