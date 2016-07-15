@@ -37,7 +37,7 @@
   top: 30%;
   left: 25%;
   animation-name: shake;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-delay: 1s;
@@ -51,7 +51,7 @@
   top: 50%;
   left: 40%;
   animation-name: updown;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-delay: 0s;
@@ -80,7 +80,7 @@
   top: 80%;
   left: 20%;
   animation-name: shake;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-delay: 0s;
@@ -94,7 +94,7 @@
   top: 15%;
   left: 80%;
   animation-name: updown;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-delay: 1s;
@@ -123,7 +123,7 @@
   top: 15%;
   left: 60%;
   animation-name: shake;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-delay: 1s;
@@ -137,11 +137,42 @@
   top: 75%;
   left: 80%;
   animation-name: updown;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-delay: 0s;
 }
+.lightgreencircle {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: #00b300;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  animation-name: dissapear;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.lightbluecircle {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: #007acc;
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  animation-name: dissapear;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+
+
+
 
 /* Animation */
 
